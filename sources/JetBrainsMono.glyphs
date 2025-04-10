@@ -493,14 +493,6 @@ sub SPC greater' by less_greater.liga;
 sub less' greater by SPC;
 } less_greater.liga;
 
-lookup less_colon.liga {
-ignore sub less less' colon;
-ignore sub less' colon less;
-ignore sub less' colon colon;
-sub SPC colon' by less_colon.liga;
-sub less' colon by SPC;
-} less_colon.liga;
-
 lookup less_colon_less.liga {
 ignore sub less less' colon less;
 ignore sub less' colon less less;
@@ -643,13 +635,6 @@ ignore sub greater' equal less;
 sub SPC equal' by greater_equal.liga;
 sub greater' equal by SPC;
 } greater_equal.liga;
-
-lookup greater_colon.liga {
-ignore sub greater greater' colon;
-ignore sub greater' colon colon;
-sub SPC colon' by greater_colon.liga;
-sub greater' colon by SPC;
-} greater_colon.liga;
 
 lookup greater_bracketright.liga {
 ignore sub greater greater' bracketright;
@@ -1723,7 +1708,6 @@ sub equal greater by equal_greater.liga;
 sub exclam equal by exclam_equal.liga;
 sub exclam exclam by exclam_exclam.liga;
 sub greater bracketright by greater_bracketright.liga;
-sub greater colon by greater_colon.liga;
 sub greater equal by greater_equal.liga;
 sub greater greater by greater_greater.liga;
 sub greater hyphen by greater_hyphen.liga;
@@ -1735,7 +1719,6 @@ sub hyphen less by hyphen_less.liga;
 sub less asciitilde by less_asciitilde.liga;
 sub less asterisk by less_asterisk.liga;
 sub less bar by less_bar.liga;
-sub less colon by less_colon.liga;
 sub less dollar by less_dollar.liga;
 sub less equal by less_equal.liga;
 sub less greater by less_greater.liga;
@@ -90443,59 +90426,6 @@ width = 600;
 );
 },
 {
-glyphname = greater_colon.liga;
-layers = (
-{
-layerId = "9ADF6715-3D0F-493D-8567-18A6FBCFC567";
-shapes = (
-{
-alignment = -1;
-pos = (-460,0);
-ref = greater;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
-}
-);
-width = 600;
-},
-{
-layerId = "CCC0BD40-BA8C-414E-B576-CF0B94E6C996";
-shapes = (
-{
-alignment = -1;
-pos = (-460,0);
-ref = greater;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
-}
-);
-width = 600;
-},
-{
-layerId = "EDF5EB54-295C-4C90-9A2F-67CD82979CFF";
-shapes = (
-{
-alignment = -1;
-pos = (-460,0);
-ref = greater;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
-}
-);
-width = 600;
-}
-);
-},
-{
 glyphname = greater_equal.liga;
 layers = (
 {
@@ -91459,59 +91389,6 @@ nodes = (
 (-1115,330,l),
 (-871,35,l)
 );
-}
-);
-width = 600;
-}
-);
-},
-{
-glyphname = less_colon.liga;
-layers = (
-{
-layerId = "9ADF6715-3D0F-493D-8567-18A6FBCFC567";
-shapes = (
-{
-alignment = -1;
-pos = (-465,0);
-ref = less;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
-}
-);
-width = 600;
-},
-{
-layerId = "CCC0BD40-BA8C-414E-B576-CF0B94E6C996";
-shapes = (
-{
-alignment = -1;
-pos = (-460,0);
-ref = less;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
-}
-);
-width = 600;
-},
-{
-layerId = "EDF5EB54-295C-4C90-9A2F-67CD82979CFF";
-shapes = (
-{
-alignment = -1;
-pos = (-460,0);
-ref = less;
-},
-{
-alignment = -1;
-pos = (0,55);
-ref = colon;
 }
 );
 width = 600;
